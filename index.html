@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="logo" width="140" src="img/logo.png">
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">John Deo</strong> <span class="caret"></span>
+                             </span></span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            SE
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Summary</span></a>
+                    </li>
+                    <li>
+                        <a href="comparison.html"><i class="fa fa-line-chart"></i> <span class="nav-label">Comparison</span></a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+	        <div class="row border-bottom">
+		        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+			        <div class="navbar-header">
+			            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+			        </div>
+		            <ul class="nav navbar-top-links navbar-right">
+
+		                <li>
+		                    <a href="login.html">
+		                        <i class="fa fa-sign-out"></i> Log out
+		                    </a>
+		                </li>
+		            </ul>
+		        </nav>
+	        </div>
+            <div class="row  border-bottom white-bg dashboard-header">
+
+                <div class="col-md-3">
+                    <h2>Summary</h2>
+                </div>
+
+        	</div>
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <div class="wrapper wrapper-content">
+                       	<div class="row">
+			                <div class="col-lg-12">
+			                    <div class="ibox float-e-margins">
+			                        <div class="ibox-title">
+			                            <h5>Solar</h5>
+			                            <div class="ibox-tools">
+			                                <label class="control-label"><i class="fa fa-dollar fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			                                <label class="control-label">kWh</label>
+			                            </div>
+			                        </div>
+			                        <div class="ibox-content">
+			                            <div class="row">
+			                                <div class="col-sm-4 m-b-xs">
+			                                    <div data-toggle="buttons" class="btn-group">
+			                                    	<label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> Live </label>
+			                                        <label class="btn btn-sm btn-white"> <input type="radio" id="option1" name="options"> Day </label>
+			                                        <label class="btn btn-sm btn-white active"> <input type="radio" id="option2" name="options"> Week </label>
+			                                        <label class="btn btn-sm btn-white"> <input type="radio" id="option3" name="options"> Month </label>
+			                                    </div>
+			                                </div>
+			                                <div class="col-sm-8 text-right">
+			                                    <label class="control-label">Sunday, 17 Jul 2017&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-calendar fa-lg"></i></label>
+			                                </div>
+			                            </div>
+			                            <div class="row">
+			                            	<div class="col-sm-3">
+			                            		<div class="container-box">
+			                            			<div class="icon" style="background-image:url('img/solar-panel.png');"></div>
+			                            			<div class="desc">
+			                            				<p>Solar Production <span>24 kWh</span></p>
+			                            				<p>House Consumption <span>7 kWh</span></p>
+			                            			</div>
+			                            		</div>
+			                            	</div>
+			                            	<div class="col-sm-3">
+			                            		<div class="container-box">
+			                            			<div class="icon" style="background-image:url('img/elect.png');"></div>
+			                            			<div class="desc">
+			                            				<p>Export to grid <span>0 kWh</span></p>
+			                            				<p>Import to grid <span>13 kWh</span></p>
+			                            			</div>
+			                            		</div>
+			                            	</div>
+			                            	<div class="col-sm-3">
+			                            		<div class="container-box">
+			                            			<div class="icon" style="background-image:url('img/elect.png');"></div>
+			                            			<div class="desc">
+			                            				<p>Battery Charge <span>0 kWh</span></p>
+			                            				<p>Battery Discharge <span>13 kWh</span></p>
+			                            			</div>
+			                            		</div>
+			                            	</div>
+			                            	<div class="col-sm-3">
+			                            		<div class="img-saving">
+			                            			<h3>$4</h3>
+			                            			<h5>Saving</h5>
+			                            		</div>
+			                            	</div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+
+			            </div>
+			            <div class="row">
+			                <div class="col-lg-12">
+			                    <div class="ibox float-e-margins bar-chart">
+			                        <div class="ibox-title">
+			                            <h5>Daily Insights</h5>
+			                        </div>
+			                        <div class="ibox-content">
+			                            <div id="containerch" style="min-width: 310px; height: 400px; margin: 10px auto;"></div>
+			                        </div>
+			                    </div>
+			                </div>
+
+			            </div>  
+	                </div>
+	            </div>
+	            <div class="footer">	                    
+                    <div>
+                        &copy; 2017 <strong>Copyright</strong> Company 
+                    </div>
+                </div>
+	        </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+ 
+    <script>
+        $(document).ready(function() {
+        	Highcharts.chart('containerch', {
+			    chart: {
+			        type: 'column'
+			    },
+			    title: {
+			        text: ''
+			    },
+			    xAxis: {
+			        categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']
+			    },
+			    yAxis: {
+			        min: -0.4,
+			        max : 1.2,
+			        title: {
+			            text: 'Consumption'
+			        }
+			    },
+			    tooltip: {
+			        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+			        shared: true
+			    },
+			    plotOptions: {
+			        column: {
+			            stacking: 'value'
+			        }
+			    },
+			    series: [{
+			        name: 'Generation',
+			        data: [0.1, 0.1, 0.36, 0.2, 0.7, 0.09, 0.09, 0.09, 0.61, 0.18, 0.96, 0.6, 0.6, 0.63, 0.62, 0.58, 0.39, 0.05, 0.19, 0.17, 0.11, 0.1, 0.07, 0.05],
+			        color : '#3c3c3c'
+			    }, {
+			        name: 'Import from grid',
+			        data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.17, 0.36, 0.5, 0.6, 0.62, 0.61, 0.56, 0.38, 0, 0, 0, 0, 0, 0, 0],
+			        color : '#f4ac36'
+			    }, {
+			        name: 'Export from grid',
+			        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.03, 0, -0.04, -0.18, -0.17, -0.09, 0, 0, 0, 0, 0, 0, 0],
+			        color : 'rgba(255,183,140,0.5)'
+			    }]
+			});
+        	$(".highcharts-button-symbol").hide();
+        	$(".highcharts-credits").hide();
+        });
+    </script>
+</body>
+</html>
